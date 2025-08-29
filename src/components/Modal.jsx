@@ -1,4 +1,6 @@
 import React from "react";
+import Left from "../assets/left.png";
+import Right from "../assets/right.png";
 
 const Modal = ({ isOpen, onClose }) => {
     if (!isOpen) return null;
@@ -23,8 +25,8 @@ const Modal = ({ isOpen, onClose }) => {
 
                 {/* Icons Row */}
                 <div className="flex justify-between items-center mt-6 px-4">
-                    <img src="/graduation.png" alt="left icon" className="w-24 h-24" />
-                    <img src="/security.png" alt="right icon" className="w-24 h-24" />
+                    <img src={Left} alt="left icon" className="w-24 h-24" />
+                    <img src={Right} alt="right icon" className="w-24 h-24" />
                 </div>
 
                 {/* Continue button */}
